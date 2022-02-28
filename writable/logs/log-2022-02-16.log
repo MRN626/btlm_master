@@ -1,0 +1,40 @@
+CRITICAL - 2022-02-16 00:24:17 --> There is no data to insert.
+#0 C:\xampp\htdocs\BTLM\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\BTLM\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\BTLM\app\Controllers\Home.php(17): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\BTLM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\BTLM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-16 00:24:19 --> There is no data to insert.
+#0 C:\xampp\htdocs\BTLM\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\BTLM\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\BTLM\app\Controllers\Home.php(17): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\BTLM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\BTLM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-16 00:24:20 --> There is no data to insert.
+#0 C:\xampp\htdocs\BTLM\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\BTLM\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\BTLM\app\Controllers\Home.php(17): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\BTLM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\BTLM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-02-16 00:25:11 --> There is no data to insert.
+#0 C:\xampp\htdocs\BTLM\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\BTLM\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\BTLM\app\Controllers\Home.php(17): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\BTLM\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\BTLM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\BTLM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
