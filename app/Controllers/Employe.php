@@ -111,6 +111,23 @@ class Employe extends BaseController{
         }
     }
 
+    public function annulerDemand($id)
+    {
+        
+        $session = session();
+
+        if ($session->get('status')) {
+
+                $fiche = new Fiche_de_besoin_model();
+                $fiche_besoin = $fiche->update($id,[
+                    'ETAT_FICHE'=>'annuler'
+                ]);
+
+                $session->setFlashdata('rules_repect', true);
+                return  redirect()->to($_SERVER['HTTP_REFERER']);
+        }
+    }
+
     public function validateDemandService ($id){
 
         $session = session();
@@ -120,6 +137,22 @@ class Employe extends BaseController{
             $fiche = new Fiche_de_besoin_model();
             $fiche_besoin = $fiche->update($id,[
                 'ETAT_FICHE'=>'en cours'
+            ]);
+
+            $session->setFlashdata('rules_repect', true);
+            return  redirect()->to($_SERVER['HTTP_REFERER']);
+        }
+    }
+
+    public function annulerDemandService ($id){
+
+        $session = session();
+
+        if ($session->get('status')) {
+
+            $fiche = new Fiche_de_besoin_model();
+            $fiche_besoin = $fiche->update($id,[
+                'ETAT_FICHE'=>'annuler'
             ]);
 
             $session->setFlashdata('rules_repect', true);
@@ -186,10 +219,22 @@ class Employe extends BaseController{
         }
     }
 
-    public function logout(){
-        return redirect()->to->view('pages/sign-in');
-       }  
-    
+    public function annulerDemandDirect ($id){
+
+        $session = session();
+
+        if ($session->get('status')) {
+
+            $fiche = new Fiche_de_besoin_model();
+            $fiche_besoin = $fiche->update($id,[
+                'ETAT_FICHE'=>'annuler'
+            ]);
+
+            $session->setFlashdata('rules_repect', true);
+            return  redirect()->to($_SERVER['HTTP_REFERER']);
+        }
+    }
+
      
 
 }
