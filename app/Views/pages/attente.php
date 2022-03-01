@@ -170,6 +170,8 @@
                         <span class="badge badge-sm bg-gradient-warning">En cours...</span>
                         <?php elseif($fiche["ETAT_FICHE"] == "demand"):?>
                         <span class="badge badge-sm bg-gradient-warning">Pas Traiter</span>
+                        <?php elseif($fiche["ETAT_FICHE"] == "annuler"):?>
+                        <span class="badge badge-sm bg-gradient-warning">refuser</span>
                         <?php else:?>
                           <span class="badge badge-sm bg-gradient-danger">en attente</span>
                         <?php endif?>
