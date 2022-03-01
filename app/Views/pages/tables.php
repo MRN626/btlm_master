@@ -99,9 +99,10 @@
           </div>
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
-            <form role="form" method="post" action="/home/logout">
-              <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign Out</button>
-            </form>
+              <a class="nav-link me-2" href="../pages/sign-in.php">
+                <i class="fa fa-user opacity-6 text-dark me-1"></i>
+                Sign Out
+              </a>
             </li>
             
           </ul>

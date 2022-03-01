@@ -176,42 +176,61 @@
             <form action="/addYourNeed" method="post">
             <?= csrf_field() ?>
             <div class="card-body">
-              <p class="text-uppercase text-sm">User Information</p>
+              <p class="text-uppercase text-sm">bon de commande</p>
               <div class="row">
+                <label for="type_commande" class="control-label"><span class="text-danger">*</span>Type Commande</label>
+						    <div class="form-group">
+							    <select name="type_commande" class="form-control">
+								    <option value="">select</option>
+								      <?php 
+								        $type_commande_values = array(
+									        'externe'=>'externe',
+									        'interne'=>'interne',
+								        );
+
+								        foreach($type_commande_values as $value => $display_text)
+								          {
+									          $selected = ($value == $this->input->post('type_commande')) ? ' selected="selected"' : "";
+
+									          echo '<option value="'.$value.'" '.$selected.'>'.$display_text.'</option>';
+								          } 
+								      ?>
+							    </select>
+						    </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">nom du produit</label>
+                    <label for="example-text-input" class="form-control-label">designation produit</label>
                     <input class="form-control" type="text" name='name_prod'>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">raison de la demande</label>
-                    <input class="form-control" type="text" name='reason'>
+                    <label for="example-text-input" class="form-control-label">observation</label>
+                    <input class="form-control" type="text" name='observation'>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">date livraison</label>
-                    <input class="form-control" type="date" name='date_del'>
+                    <label for="example-text-input" class="form-control-label">date de commande</label>
+                    <input class="form-control" type="date" name='date_com'>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">addresse livraison</label>
-                    <input class="form-control" type="text" name='adress_del'>
+                    <label for="example-text-input" class="form-control-label">quantite</label>
+                    <input class="form-control" type="text" name='quantite'>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Heure livraison</label>
-                    <input class="form-control" type="time" name='hour_del'>
+                    <label for="example-text-input" class="form-control-label">proformat valider</label>
+                    <input class="form-control" type="text" name='proformat_valide'>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">description</label>
-                    <textarea class="form-control" name='description'></textarea>
+                    <label for="example-text-input" class="form-control-label">fournisseur</label>
+                    <textarea class="form-control" name='fournisseur'></textarea>
                   </div>
                 </div>
               </div>

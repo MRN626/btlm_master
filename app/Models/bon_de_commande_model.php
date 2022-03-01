@@ -14,8 +14,7 @@ class Bon_de_commande_model extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['ID_FICHE_BESOIN', 'ID_SERVICE_GEN','ID_DAF','ID_DG','NOM_FOURNISSEUR',
-                                'ADRESSE_FOURNISSEUR','TELEPHONE_FOURNISSEUR', 'DATE_BON_DEMANDE','DESIGNATION_PRODUIT','QUANTITE',
+    protected $allowedFields = ['ID_FICHE_BESOIN','ID_FOURNISSEUR', 'DATE_BON_DEMANDE','DESIGNATION_PRODUIT','QUANTITE',
                                 'OBSERVATION','PROFORMAT_FOURNISSEUR','FACTURE', 'TYPE_BON_COMMANDE',
                                 'ETAT_BON_COMMANDE','EVALUATION_FOURNISSEUR','SIGNATURE_SERVICE_GEN','SIGNATURE_DAF','SIGNATURE_DG'];
 
