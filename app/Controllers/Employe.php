@@ -186,4 +186,10 @@ class Employe extends BaseController{
         }
     }
 
+    public function logout(){
+        return redirect()->to->view('pages/sign-in');
+       }  
+    
+     
+
 }

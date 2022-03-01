@@ -39,6 +39,7 @@ $routes->post('addYourNeed', 'Employe::addFicheBesoin');
 $routes->get('demands', 'Employe::allDemandsFromEmploye');
 $routes->get('attentes', 'Employe::allDemandsFromEmployeAttente');
 $routes->get('demandService', 'Employe::demandDirector');
+//$routes->get('sign_out', 'Employe::logout');
 
 
 /*

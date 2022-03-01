@@ -77,11 +77,10 @@ class Home extends BaseController
         }
     }
 
-    public function logout()
-    {
+    public function logout(){
         $session = session();
-        $session->destroy();
-        return redirect()->to('/login');
-    }
-
+        $session->setFlashdata('rules_repect', true);
+        $this->session->destroy();
+        return redirect()->route("/");
+       }  
 }

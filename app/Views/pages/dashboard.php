@@ -58,7 +58,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/addYouNeed">
+          <a class="nav-link " href="/sign_out">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
             </div>
@@ -119,9 +119,12 @@
           </div>
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
-            <form role="form" method="post" action="/home/logout">
-              <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign Out</button>
-            </form>
+              <li class="nav-item">
+                  <a class="nav-link me-2" href="../pages/sign-in.php">
+                    <i class="fa fa-user opacity-6 text-dark me-1"></i>
+                    Sign Out
+                  </a>
+              </li>
             </li>            
           </ul>
         </div>

@@ -91,12 +91,10 @@
           </div>
           <ul class="navbar-nav justify-content-end">
             <li class="nav-item d-flex align-items-center">
-            <form role="form" method="post" action="/home/logout">
-              <a class="nav-link text-white font-weight-bold px-0" >
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign Out</span>
+              <a class="nav-link me-2" href="../pages/sign-in.php">
+                <i class="fa fa-user opacity-6 text-dark me-1"></i>
+                  Sign Out
               </a>
-            </form>
             </li>
             <li class="nav-item d-xl-none ps-3 pe-0 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white p-0">
