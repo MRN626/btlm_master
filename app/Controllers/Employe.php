@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Models\Bon_de_commande_model;
 use App\Models\Fiche_de_besoin_model;
 
 
@@ -234,6 +236,51 @@ class Employe extends BaseController{
             return  redirect()->to($_SERVER['HTTP_REFERER']);
         }
     }
+
+
+    public function addBonCommande(){
+        
+        $session = session();
+
+        if ($session->get('status')) {
+            
+            helper(['form', 'url']);
+            if ($this->request->getMethod() === 'post' && $this->validate([
+                'type_commande' => 'required|min_length[3]|max_length[255]',
+                'name_prod' => 'required|min_length[3]|max_length[255]',
+                'observation' => 'required|min_length[3]|max_length[255]',
+                'date_com' => 'required|min_length[3]|max_length[255]',
+                'quantite' => 'required|min_length[3]|max_length[255]',
+                'proformat_valide' => 'required|min_length[3]|max_length[255]',
+                'fournisseur'  => 'required|min_length[5]|max_length[255]',
+            ])) {
+
+                
+                $id = $session->get('id');
+                $bon = new Bon_de_commande_model();
+                $boncommande = $bon->insert([
+                    'ID_FICHE_KEY' =>$id,
+                    'DESIGNATION_PRODUIT' =>$this->request->getPost('name_prod'),
+                    'OBSERVATION' =>$this->request->getPost('observation'),
+                    'TYPE_BON_COMMANDE' =>$this->request->getPost('type_commande'),
+                    'DATE_BON_COMMANDE' =>$this->request->getPost('date_com'),
+                    'QUANTITE' =>$this->request->getPost('quantite'),
+                    'PROFORMAT_FOURNISSEUR' =>$this->request->getPost('proformat_valide'),
+                    'ID_FOUNISSEUR' =>$this->request->getPost('fournisseur')
+                ]);
+
+                $session->setFlashdata('add_demand', 'Vous avez ajouté une demande cher(e) '.$session->get('name'));
+                return  redirect()->to('/demander');
+            }
+            else{
+    
+                $session->setFlashdata('rules_repect', true);
+                return  redirect()->to($_SERVER['HTTP_REFERER']);
+            }
+        }
+        
+    }
+
 
      
 

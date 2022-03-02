@@ -205,6 +205,11 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">quantite</label>
+                    <input class="form-control" type="text" name='quantite'>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
                     <label for="example-text-input" class="form-control-label">observation</label>
                     <input class="form-control" type="text" name='observation'>
                   </div>
@@ -215,11 +220,7 @@
                     <input class="form-control" type="date" name='date_com'>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">quantite</label>
-                    <input class="form-control" type="text" name='quantite'>
-                  </div>
+            
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">

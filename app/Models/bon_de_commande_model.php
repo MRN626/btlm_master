@@ -16,7 +16,7 @@ class Bon_de_commande_model extends Model
 
     protected $allowedFields = ['ID_FICHE_BESOIN','ID_FOURNISSEUR', 'DATE_BON_DEMANDE','DESIGNATION_PRODUIT','QUANTITE',
                                 'OBSERVATION','PROFORMAT_FOURNISSEUR','FACTURE', 'TYPE_BON_COMMANDE',
-                                'ETAT_BON_COMMANDE','EVALUATION_FOURNISSEUR','SIGNATURE_SERVICE_GEN','SIGNATURE_DAF','SIGNATURE_DG'];
+                                'ETAT_BON_COMMANDE','ID_FOURNISSEUR','SIGNATURE_SERVICE_GEN','SIGNATURE_DAF','SIGNATURE_DG'];
 
 
     protected $useTimestamps = true;

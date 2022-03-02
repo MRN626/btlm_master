@@ -176,7 +176,7 @@
             <form action="/addYourNeed" method="post">
             <?= csrf_field() ?>
             <div class="card-body">
-              <p class="text-uppercase text-sm">User Information</p>
+              <p class="text-uppercase text-sm">Fiche Information</p>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
